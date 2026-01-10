@@ -84,21 +84,21 @@ class Solution {
         Student dipak = new Student(20, "Dipak", "Kalaskar", 70.00, 'C');
         Student prasad = new Student(18, "Prasad", "Potdar", 85.00, 'B');
 
-        ArrayList<Student> list = new ArrayList<>();
+        ArrayList<Student> studentList = new ArrayList<>();
 
-        list.add(pavan);
-        list.add(ganesh);
-        list.add(rushi);
-        list.add(dipak);
-        list.add(prasad);
+        studentList.add(pavan);
+        studentList.add(ganesh);
+        studentList.add(rushi);
+        studentList.add(dipak);
+        studentList.add(prasad);
 
-        System.out.println(list);
+        System.out.println("Before sorting");
+        System.out.println(studentList);
+
+        Collections.sort(studentList);
 
         System.out.println("After sorting");
-
-        Collections.sort(list);
-
-        System.out.println(list);
+        System.out.println(studentList);
 
     }
 }
