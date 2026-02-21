@@ -114,7 +114,9 @@ class Solution {
 
         List<Employee> empList = getEmpList();
 
-        List<Employee> res = empList.stream().filter(emp -> emp.getGender().equals("Female")).toList();
+        List<Employee> res = empList.stream()
+                .filter(emp -> emp.getGender().equals("Female"))
+                .toList();
 
         System.out.println(res);
     }
