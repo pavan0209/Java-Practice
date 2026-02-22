@@ -23,6 +23,6 @@ class Solution {
                 .sorted()
                 .skip(k - 1)
                 .findFirst()
-                .ifPresent(num -> System.out.println(num));
+                .ifPresent(num -> System.out.println("Kth Smallest number: " + num));
     }
 }
