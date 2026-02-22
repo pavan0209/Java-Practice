@@ -43,8 +43,8 @@ class Solution {
                 new Transaction("2022-01-02", 400),
                 new Transaction("2022-01-03", 500));
 
-        Map<String, Integer> sumByDay = transactions.stream().
-        collect(Collectors.groupingBy(t -> t.getDate(), Collectors.summingInt(t-> t.getAmount())));
+        Map<String, Integer> sumByDay = transactions.stream()
+                .collect(Collectors.groupingBy(t -> t.getDate(), Collectors.summingInt(t -> t.getAmount())));
 
         System.out.println(sumByDay);
     }
